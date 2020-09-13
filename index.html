@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="stylesi.css" media="screen"/>
+    <title>Minha nova calculadora</title>
+</head>
+<body>
+    <div class="calculadoradispositivo">
+      <input type="hidden" id="hdMemo" value="0"/>
+      <input type="hidden" id="hdMemoOp" value="0"/>
+
+      <input type="text" class="teladacalculadora" value="0" id="tela">
+
+    <div class="botoesdacalculadora">
+        <button type="button" class="" value="all-clear" onclick="Ac()">AC</button>
+        <button type="button" class="" value="+/-" onclick="PosNeg()">+/-</button>
+        <button type="button" class="" value="%" onclick="Porcentagem()">%</button>
+        <button type="button" class="op" value="/" onclick="divide()">&divide;</button>
+
+        <button type="button" value="7" class="" onclick="sete()">7</button>
+        <button type="button" value="8" class="" onclick="oito()">8</button>
+        <button type="button" value="9" class="" onclick="nove()">9</button>
+        <button type="button" class="op" value="*" onclick="multiplicar()">x</button>
+
+        <button type="button" value="4" class="" onclick="quatro()">4</button>
+        <button type="button" value="5" class="" onclick="cinco()">5</button>
+        <button type="button" value="6" class="" onclick="seis()">6</button>
+        <button type="button" class="op" value="-" onclick="subtrai()">-</button>
+
+        <button type="button" value="1" class="" onclick="um()">1</button>
+        <button type="button" value="2" class="" onclick="dois()">2</button>
+        <button type="button" value="3" class="" onclick="tres()">3</button>
+        <button type="button" class="op" value="+" onclick="soma()">+</button>
+
+        
+        <button type="button" value="0" class="btnMaior" onclick="zero()">0</button>
+        <button type="button" class="" value="." onclick="ponto()">.</button>
+        <button type="button" class="op" value="=" onclick="igual()">=</button>
+    </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
